@@ -18,6 +18,13 @@ function App() {
     <div className="gradient__bg">
       <Navbar></Navbar>
       <Header></Header>
+      <Brand></Brand>
+      <What></What>
+      <Features></Features>
+      <Possibility></Possibility>
+      <Cta></Cta>
+      <Blog></Blog>
+      <Footer></Footer>
     </div>
 
   )
