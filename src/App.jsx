@@ -11,25 +11,36 @@ import Possibility from './containers/possiblilty/Possibility'
 import What from './containers/whatGPT3/What'
 import Bard from './components/bard/Bard'
 import Main from './components/main/Main'
+import { Link } from 'react-router-dom';
+import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
+
 
 function App() {
 
   return (
     <div className="">
     <div className="gradient__bg">
-      {/* <Navbar></Navbar>
-      <Header></Header>
-      <Brand></Brand>
-      <What></What>
-      <Features></Features>
-      <Possibility></Possibility>
-      <Cta></Cta>
-      <Blog></Blog>
-      <Footer></Footer> */}
-    </div>
-    <div className="second">
-    <Bard></Bard>
-    <Main></Main>
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={
+            <div className='gradient__bg'>
+            <Navbar></Navbar>
+            <Header></Header>
+            <Brand></Brand>
+            <What></What>
+            <Possibility></Possibility>
+            <Cta></Cta>
+            <Blog></Blog>
+            <Footer></Footer>
+            </div>} />
+            <Route path="/Bard" element={
+              <div className='second'>
+                <Bard />
+                <Main />
+              </div>
+            } />
+        </Routes>
+        </BrowserRouter>
     </div>
     </div>
 

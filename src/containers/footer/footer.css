@@ -64,8 +64,7 @@
 }
 
 .gpt3__footer-links_logo img {
-    width: 118px;
-    height: 30px;
+    width: 50px;
 
     margin-bottom: 1rem;
 }
@@ -113,6 +112,11 @@
     font-family: var(--font-family);
     line-height: 15px;
     color: #fff;
+}
+
+.gpt3__footer-links_logo h1{
+    margin-bottom: 15px;
+    font-family: var(--font-family);
 }
 
 @media screen and (max-width: 850px) {
